@@ -1,16 +1,21 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-//import { Header } from './components/Header';
+import { HomePage } from './pages/HomePage';
+import { MoviePage } from './pages/MoviePage';
 
-import MovieGrid from './components/MovieGrid';
+
+
 
 
 
 function App() {
   return (
+
     <div className="App">
-      <span className='header'>Movie</span>
-      <MovieGrid/>
-      
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/movie/:movieId" element={<MoviePage />} />
+      </Routes>
     </div>
   );
 }

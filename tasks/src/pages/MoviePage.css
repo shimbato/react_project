@@ -1,0 +1,41 @@
+
+
+.movie_wrapper {
+  position: absolute;
+  width: 1700px;
+  min-height: 648px;
+  background-size: cover;
+  color: white;
+  line-height: 32px;
+  overflow: auto;
+  padding-top: 130px;
+  padding-bottom: 60px;
+}
+
+  .movie_wrapper__titles{
+  text-align: justify;
+  width: 800px;
+   
+  }
+  
+  .movie_wrapper__genre {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-transform: capitalize;
+    color: #0feffd;
+  
+    gap: 10px;
+  
+    width: 65px;
+    height: 24px;
+  }
+  
+  .movie_wrapper__shadow {
+    background: rgba(29, 29, 29, 0.5);
+    border-radius: 0px 8px;
+    line-height: 16px;
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+ 
